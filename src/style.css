@@ -1,0 +1,119 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+.main-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+    gap: 70px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+
+    border: 10px solid black;
+}
+
+.player-coord, .computer-coord {
+    height: 80px;
+    width: 80px;
+    border: 2px solid black;
+}
+
+.computer-coord.safe:hover {
+    border-color:  yellow;
+    background-color: rgb(175, 73, 73);
+}
+
+h1 {
+    font-size: 100px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(20, 120, 226);
+}
+
+.popup {
+    background-color: rgba(228, 207, 182, 0.5);
+    height: 100vh;
+    width: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-main-div {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.winner-popup {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border-radius: 10px; 
+}
+
+.hidden {
+    display: none;
+}
+
+.starting-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+
+    border: 2px solid black;
+}
+
+.starting-coord {
+    height: 40px;
+    width: 40px;
+    border: 2px solid black;
+}
+
+button {
+    padding: 50px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#place-ship {
+    font-size: 40px;
+    padding: 20px;
+    color: rgb(52, 153, 119);
+    background-color: rgb(180, 178, 178);
+    border-radius: 5px;
+}
+
+#battleship {
+    border-radius: 5px;
+    font-size: 60px;
+    padding: 20px;
+    background-color: rgb(180, 178, 178);
+}
